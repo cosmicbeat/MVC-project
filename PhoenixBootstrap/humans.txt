@@ -1,0 +1,14 @@
+﻿/* TEAM */
+Your title: Tisho and Malina.
+Site:  http://cosmicbeat.eu.
+Twitter: your Twitter username.
+Location: Sofia, Bulgaria.
+
+/* THANKS */
+Name:
+
+/* SITE */
+Last update: 2015/09/03
+Standards: ASP.Net MVC, HTML5, CSS3,..
+Components: Modernizr, jQuery, etc.
+Software: Visual Studio

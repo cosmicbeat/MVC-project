@@ -1,0 +1,21 @@
+﻿@model Phoenix.Models.Events
+
+@using (Html.BeginForm("Create", "Events", FormMethod.Post))
+{
+   @Html.AntiForgeryToken()
+    <h2 class="title">Create events</h2>
+    <hr/>
+    <form action="Events/Create" method="post" class="form-group form-inline col-md-7">
+        <label for="title">Events Title</label>
+        <input class="input-group" type="text" name="title" value="" />
+
+        <label for="description">Events description</label>
+        <input class="input-group" type="text" name="description" value="" />
+
+        <br />
+        <input type="submit" name="submit" value="Create Events" class="btn btn-info" />
+    </form>
+
+}
+
+

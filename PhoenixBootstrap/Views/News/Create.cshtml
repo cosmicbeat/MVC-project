@@ -1,0 +1,21 @@
+﻿@model Phoenix.Models.News
+
+@using (Html.BeginForm("Create", "News", FormMethod.Post))
+{
+   @Html.AntiForgeryToken()
+    <h2 class="title">Create news</h2>
+    <hr/>
+    <form action="News/Create" method="post" class="form-group form-inline col-md-7">
+        <label for="title">News Title</label>
+        <input class="input-group" type="text" name="title" value="" />
+
+        <label for="description">News description</label>
+        <input class="input-group" type="text" name="description" value="" />
+
+        <br />
+        <input type="submit" name="submit" value="Create News" class="btn btn-info" />
+    </form>
+
+}
+
+

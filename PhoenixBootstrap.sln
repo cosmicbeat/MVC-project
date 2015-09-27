@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoenixBootstrap", "PhoenixBootstrap\PhoenixBootstrap.csproj", "{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoenix.Data", "Phoenix.Data\Phoenix.Data.csproj", "{FEE8DA1E-DFB3-44C6-B0F0-2AAECE9314E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoenix.Models", "Phoenix.Models\Phoenix.Models.csproj", "{00CF983F-374E-41EF-BBB1-57B3908E47ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F88E760-CFA0-4D95-ACD2-3CB76C9E4AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE8DA1E-DFB3-44C6-B0F0-2AAECE9314E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE8DA1E-DFB3-44C6-B0F0-2AAECE9314E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE8DA1E-DFB3-44C6-B0F0-2AAECE9314E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE8DA1E-DFB3-44C6-B0F0-2AAECE9314E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CF983F-374E-41EF-BBB1-57B3908E47ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CF983F-374E-41EF-BBB1-57B3908E47ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CF983F-374E-41EF-BBB1-57B3908E47ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CF983F-374E-41EF-BBB1-57B3908E47ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

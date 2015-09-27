@@ -1,0 +1,21 @@
+﻿@model Phoenix.Models.Interview
+
+@using (Html.BeginForm("Create", "Interviews", FormMethod.Post))
+{
+   @Html.AntiForgeryToken()
+    <h2 class="title">Create interview</h2>
+    <hr/>
+    <form action="Interviews/Create" method="post" class="form-group form-inline col-md-7">
+        <label for="title">Interview Title</label>
+        <input class="input-group" type="text" name="title" value="" />
+
+        <label for="description">Interview description</label>
+        <input class="input-group" type="text" name="description" value="" />
+
+        <br />
+        <input type="submit" name="submit" value="Create Interview" class="btn btn-info" />
+    </form>
+
+}
+
+

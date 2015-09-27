@@ -1,0 +1,51 @@
+﻿@model Phoenix.Models.Interview
+
+@{
+    ViewBag.Title = "Interview";
+}
+
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr /><hr />
+<hr />
+<hr/>
+<h2>Interview</h2>
+
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatePublic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatePublic)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
