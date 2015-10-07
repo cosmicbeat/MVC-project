@@ -37,11 +37,11 @@
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("History", "Index", "History")</li>
-                            <li>@Html.ActionLink("Board", "Index", "Board")</li>
-                            <li>@Html.ActionLink("Staff", "Index", "Staff")</li>
-                            <li>@Html.ActionLink("CodeofConduct", "Index", "CodeofConduct")</li>
-                            <li>@Html.ActionLink("AnnualReports", "Index", "AnnualReports")</li>
+                            <li>@Html.ActionLink("History", "History", "Home")</li>
+                            <li>@Html.ActionLink("Board", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Staff", "PageNotFound", "Staff")</li>
+                            <li>@Html.ActionLink("Code of Conduct", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Annual Reports", "PageNotFound", "Home")</li>
                             <!--<li class="divider"></li>
             <li class="dropdown-header">Nav header</li>
             <li><a href="#">Separated link</a></li>
@@ -51,59 +51,59 @@
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Work<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("FocusAreas", "Index", "FocusAreas")/a></li>
+                            <li>@Html.ActionLink("Focus Areas", "PageNotFound", "Home")</li>
                             <li class="divider"></li>
                             <!--<li class="dropdown-header">Nav header</li> -->
-                            <li>@Html.ActionLink("VocationalTraining", "Index", "VocationalTraining")/a></li>
-                            <li>@Html.ActionLink("SocialEnterprise", "Index", "SocialEnterprise")</li>
+                            <li>@Html.ActionLink("Vocational Training", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Social Enterprise", "PageNotFound", "Home")</li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Partners<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Donors", "Index", "Donors")</li>
-                            <li>@Html.ActionLink("Sponsors", "Index", "Sponsors")</li>
-                            <li>@Html.ActionLink("Partnerships", "Index", "Partnerships")</li>
+                            <li>@Html.ActionLink("Donors", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Sponsors", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Partnerships", "PageNotFound", "Home")</li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Donate<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Cash", "Index", "Cash")></li>
-                            <li>@Html.ActionLink("Stocks", "Index", "Stocks")</li>
-                            <li>@Html.ActionLink("Bitcoins", "Index", "Bitcoins")</li>
-                            <li>@Html.ActionLink("Otherassets", "Index", "Otherassets")></li>
+                            <li>@Html.ActionLink("Cash", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Stocks", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Bitcoins", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Other assets", "PageNotFound", "Home")></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Surveys", "Index", "Surveys")</li>
+                            <li>@Html.ActionLink("Surveys", "PageNotFound", "Home")</li>
                         </ul>
                     </li>
-                    <li>@Html.ActionLink("News", "Index", "News")<a href="#">Events</a></li>
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Newsletters<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Subscriptionform", "Index", "Subscriptionform")</li>
-                        </ul>
-                    </li>
+                    <li>@Html.ActionLink("Events", "Index", "Home")</li>
+                    @*<li>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Newsletters<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>@Html.ActionLink("Subscription form", "PageNotFound", "Home")</li>
+        </ul>
+    </li>*@
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Volunteer<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Currentopportunities", "Index", "Currentopportunities")</li>
-                            <li>@Html.ActionLink("Applyonline", "Index", "Applyonline")</li>
+                            <li>@Html.ActionLink("Current opportunities", "PageNotFound", "Home")</li>
+                            <li>@Html.ActionLink("Apply online", "PageNotFound", "Home")</li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media Library<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("Interview", "Index", "Interview")</li>
-                            <li>@Html.ActionLink("News", "Index", "News")</li>
+                            @*<li>@Html.ActionLink("News", "Index", "News")</li>*@
                             <!--<li><a href="#">Newsletters</a></li>-->
                         </ul>
                     </li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li>@Html.ActionLink("Contact us", "ContactInfo", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div><!--/.nav-collapse -->

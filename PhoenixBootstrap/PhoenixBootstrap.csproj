@@ -195,13 +195,33 @@
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\History\animate.css" />
+    <Content Include="css\History\bootstrap.css" />
+    <Content Include="css\History\main.css" />
+    <Content Include="css\History\owl.carousel.css" />
+    <Content Include="css\History\owl.theme.css" />
+    <Content Include="css\History\owl.transitions.css" />
+    <Content Include="css\History\reset.css" />
     <Content Include="css\sticky-footer-navbar.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="humans.txt" />
+    <Content Include="Images\bug.png" />
+    <Content Include="Images\History\banitsa.jpg" />
+    <Content Include="Images\History\tea.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\History\ajaxchimp.js" />
+    <Content Include="js\History\bootstrap.js" />
+    <Content Include="js\History\bootstrap.min.js" />
+    <Content Include="js\History\jquery.js" />
+    <Content Include="js\History\main.js" />
+    <Content Include="js\History\nicescroll.js" />
+    <Content Include="js\History\owl.carousel.min.js" />
+    <Content Include="js\History\parallax.js" />
+    <Content Include="js\History\scrollTo.js" />
+    <Content Include="js\History\wow.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -214,7 +234,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\Home\History.cshtml" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -314,6 +336,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\News\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\ContactInfo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Interview.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

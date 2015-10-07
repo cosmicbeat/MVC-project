@@ -38,17 +38,15 @@
         
         public ActionResult Index()
         {
-            // var interviews = this.Data.Interviews
-                 
-            //    .Select(TweetViewModel.ViewModel)
-            //     .OrderByDescending(t => t.TakenDate);
-            //.Include(t => t.AuthorId); //.All()
-            //.Include(t  => t.Author)
-            //.Select(TweetViewModel.ViewModel)
-            //.OrderByDescending(t => t.TakenDate);
+            List<Interview> interviews = db.Interviews
+                .Select(InterviewViewModel.ViewModel)
+                .OrderByDescending(i => i.Title)
+                //.Include(i => i.Author)
+                .ToList();//.All();
+                
 
-            List<Interview> interviews = new List<Interview>();
-            ViewBag.Message = "Interviews";
+          //  List<Interview> interviews = new List<Interview>();
+           // ViewBag.Message = "Interviews";
 
             if (interviews == null)
             {
@@ -59,25 +57,6 @@
             {
                 return this.View(interviews);
             }
-
-        //    //return this.View(tweets);
-
-        //   
-        //    return this.View();
-
-            
-
-            //if (this.UserProfile != null)
-            //{
-
-                //interviews = this.Data.Interviews.All().ToList();
-              
-            //}
-            //else
-            //{
-            //   // interviews = this.Data.Interview.All().ToList();
-            //}
-
            
         }
 
@@ -94,13 +73,20 @@
                 //          where tweet.Id == id
                 //         select tweet).Take(1).ToList();
 
+            var outputInterview = new InterviewViewModel
+            {
+                Id= interview.Id,
+                Title = interview.Title,
+                Description = interview.Description//,
+               // DatePublic = interview.DatePublic
+            };
 
             if (interview == null)
             {
                 return RedirectToAction("PageNotFound","Home");
             }
 
-            return View(interview);
+            return this.PartialView("_Interview", outputInterview);
         }
 
         // GET: Tweets/Create

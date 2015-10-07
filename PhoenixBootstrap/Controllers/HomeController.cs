@@ -163,9 +163,9 @@
             return View();
         }
 
-        public ActionResult Contact()
+         public ActionResult ContactInfo()
         {
-            ViewBag.Title = "Contact";
+            ViewBag.Title = "Contact us";
             return View();
         }
 

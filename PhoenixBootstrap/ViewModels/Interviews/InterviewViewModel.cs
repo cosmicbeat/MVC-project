@@ -5,7 +5,7 @@
     using System.ComponentModel.DataAnnotations;
     using System.Linq.Expressions;
     using Phoenix.Models;
-    using PhoenixBootstrap.ViewModels;
+    //using PhoenixBootstrap.ViewModels;
     
     public class InterviewViewModel //:IMapFrom<Interview>
     {
@@ -18,7 +18,7 @@
                     Id = x.Id,
                     AvatarURL = x.AvatarURL,
                     Description = x.Description,
-                    DatePublic = x.DatePublic,
+                   // DatePublic = x.DatePublic,
                     Title = x.Title
                 };
             }
