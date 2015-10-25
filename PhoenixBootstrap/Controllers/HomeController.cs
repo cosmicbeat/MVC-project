@@ -114,11 +114,6 @@
             return View();
         }
 
-        //public ActionResult Other()
-        //{
-        //    ViewBag.Title = "Other";
-        //    return View();
-        //}
 
         public ActionResult Blog()
         {
@@ -126,11 +121,6 @@
             return View();
         }
 
-        public ActionResult Surveys()
-        {
-            ViewBag.Title = "Surveys";
-            return View();
-        }
 
         public ActionResult Events()
         {

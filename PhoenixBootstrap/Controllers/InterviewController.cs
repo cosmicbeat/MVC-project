@@ -18,7 +18,7 @@
     {
         private PhoenixContext db = new PhoenixContext();
 
-        // GET: Tweets
+        // GET: Interviews
         public InterviewController(IPhoenixData data)
             :base(data)
         {
@@ -39,10 +39,11 @@
         public ActionResult Index()
         {
             List<Interview> interviews = db.Interviews
-                .Select(InterviewViewModel.ViewModel)
+                //.Select(InterviewViewModel.ViewModel) 
+                
                 .OrderByDescending(i => i.Title)
                 //.Include(i => i.Author)
-                .ToList();//.All();
+               .ToList();//.All();
                 
 
           //  List<Interview> interviews = new List<Interview>();
@@ -60,7 +61,7 @@
            
         }
 
-        //GET : Tweets/Details/id
+        //GET : Interviews/Details/id
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -69,9 +70,9 @@
             }
 
             var interview = db.Interviews.Find(id);
-                //(from tweet in db.Tweets
-                //          where tweet.Id == id
-                //         select tweet).Take(1).ToList();
+            //(from interview in db.Interviews
+            //          where interview.Id == id
+            //         select interview).Take(1).ToList();
 
             var outputInterview = new InterviewViewModel
             {
@@ -89,13 +90,13 @@
             return this.PartialView("_Interview", outputInterview);
         }
 
-        // GET: Tweets/Create
+        // GET: Interviews/Create
         [HttpGet]
         public ActionResult Create()
         {
             ViewBag.AuthorId = new SelectList(db.Users, "Id", "FullName");
 
-            //var model = new TweetViewModel();
+            //var model = new InterviewViewModel();
 
            return this.View();
 

@@ -29,6 +29,29 @@ section,
 summary {
   display: block;
 }
+
+
+/* #flex {
+    display:table-row;
+    float: left;
+} */
+
+#logos {
+    margin-top: -50px;
+}
+#brand {
+    /* display: table-cell; */
+    float: left;
+}
+#moto {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    /* display: table-cell; */
+    position: absolute;
+	right: 70px;
+    top: 10px;
+}
+
 audio,
 canvas,
 progress,
@@ -277,7 +300,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #ffffff;
-  background-color: #108a93;
+  background-color: #231f20;
 }
 input,
 button,
@@ -736,14 +759,24 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
+  margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
+  /* display: table-cell; */
 }
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
+
+@media (min-width: 870px) {
+  .container {
+    width: 870px;
+    
+  }
+}
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -3784,12 +3817,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav {
   margin: 7.5px -15px;
 }
+
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
+
+    #moto {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    /* display: table-cell; */
+    position: absolute;
+	right: 70px;
+    top: 30px;
+}
+
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3937,7 +3981,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #ad1d28;
+  background-color: #eb2929;
   border-color: #911821;
 }
 .navbar-default .navbar-brand {
@@ -5868,3 +5912,4 @@ legend {
 .affix {
   position: fixed;
 }
+

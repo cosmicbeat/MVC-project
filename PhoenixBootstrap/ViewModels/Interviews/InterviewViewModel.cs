@@ -9,7 +9,7 @@
     
     public class InterviewViewModel //:IMapFrom<Interview>
     {
-        public static Expression<Func<Interview, InterviewViewModel>> ViewModel
+        public Expression<Func<Interview, InterviewViewModel>> ViewModel
         {
             get
             {

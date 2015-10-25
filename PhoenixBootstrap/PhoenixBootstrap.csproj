@@ -210,6 +210,8 @@
     <Content Include="Images\bug.png" />
     <Content Include="Images\History\banitsa.jpg" />
     <Content Include="Images\History\tea.jpg" />
+    <Content Include="Images\home24.png" />
+    <Content Include="Images\logo.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\History\ajaxchimp.js" />
@@ -342,6 +344,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Interview.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Blog.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
