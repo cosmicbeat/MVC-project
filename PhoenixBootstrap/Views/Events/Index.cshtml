@@ -1,55 +1,33 @@
 ﻿@using WebGrease.Css.Extensions
+@using Phoenix.Models
 
-@model IEnumerable<Phoenix.Models.Events>
-
+@model List<Events>
 @{
     ViewBag.Title = "Home";
 }
 
 <h2> Phoenix Inspire</h2>
 
-@*<p>
-    @Html.ActionLink("Create New", "Create");
-</p>*@
-<table class="table">
-    <tr>
-        <th>
-            Author           
-        </th>
-        <th>
-            Title            
-        </th>
-        <th>
-            Description
-        </th>
-        <th>
-            Date 
-        </th>
-        
-    </tr>
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<h2> Phoenix Inspire</h2>
 
+@*<p>
+        @Html.ActionLink("Create New", "Create");
+    </p>*@
+
+
+<div id="eventsContainer">
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Author.FullName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DatePublic)
-            </td>
-            <td>
-                @Html.ActionLink("Details", "Details", new { id = item.Id, @class = "btn btn-default" }) |
-                @*@Html.ActionLink("Edit", "Edit", new { id = item.Id, @class = "btn btn-default" }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id, @class = "btn btn-default" })*@
-            </td>
-        </tr>
+        @Html.Partial("~/Views/Shared/_Event.cshtml", item)
     }
+</div>
 
 
-</table>

@@ -5,4 +5,119 @@
 
 <h2>@Html.Raw(ViewBag.Message);</h2>
 
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                404
+                <small>Page Not Found</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">404</li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="jumbotron">
+                <h1>
+                    <span class="error-404">404</span>
+                </h1>
+                <img src="~/Images/mufin.png" />
+                <p>The page you're looking for could not be found. Here are some helpful links to get you back on track:</p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        About us
+                        <ul>
+                            <li>
+                                @Html.ActionLink("History", "History", "Home") 
+                            </li>
+                            <li>
+                                @Html.ActionLink("Board", "PageNotFound", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Team", "PageNotFound", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Annual Reports", "PageNotFound", "Home")
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Our Work
+                        <ul>
+                            <li>
+                               @Html.ActionLink("Areas of focus", "PageNotFound", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Social Enterprise", "PageNotFound", "Home")
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Our Partners
+                        <ul>
+                            <li>
+                               @Html.ActionLink("Partnerships", "PageNotFound", "Home")
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Donate
+                        <ul>
+                            <li>
+                                @Html.ActionLink("Cash", "PageNotFound", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Other assets", "PageNotFound", "Home")
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       @Html.ActionLink("Blog", "Blog", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Events", "Index", "Events")
+                    </li>
+                    <li>
+                        Volunteer
+                        <ul>
+                            <li>
+                               @Html.ActionLink("Current opportunities", "PageNotFound", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Apply online", "PageNotFound", "Home")
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Media Library
+                        <ul>
+                            <li>
+                                @Html.ActionLink("Interview", "Index", "Interview")
+                            </li>
+                            <li>
+                               @Html.ActionLink("Gallery", "Index", "Gallery")
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact us", "ContactInfo", "Home")
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 

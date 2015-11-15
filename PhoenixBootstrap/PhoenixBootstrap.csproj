@@ -202,16 +202,24 @@
     <Content Include="css\History\owl.theme.css" />
     <Content Include="css\History\owl.transitions.css" />
     <Content Include="css\History\reset.css" />
+    <Content Include="css\modern-business.css" />
+    <Content Include="css\slidePanel\mbExtruder.css" />
+    <Content Include="css\slidePanel\site.css" />
     <Content Include="css\sticky-footer-navbar.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="humans.txt" />
+    <Content Include="Images\cake.jpg" />
     <Content Include="Images\bug.png" />
     <Content Include="Images\History\banitsa.jpg" />
     <Content Include="Images\History\tea.jpg" />
     <Content Include="Images\home24.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\mufin.png" />
+    <Content Include="Images\slider\DSC_0006.JPG" />
+    <Content Include="Images\slider\people.jpg" />
+    <Content Include="Images\slider\Social workers present cert to Phoenix Inspire.JPG" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\History\ajaxchimp.js" />
@@ -224,6 +232,11 @@
     <Content Include="js\History\parallax.js" />
     <Content Include="js\History\scrollTo.js" />
     <Content Include="js\History\wow.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\slidePanel\jquery.hoverIntent.min.js" />
+    <Content Include="js\slidePanel\jquery.mb.flipText.js" />
+    <Content Include="js\slidePanel\mbExtruder.js" />
+    <Content Include="js\slidePanel\selector.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -250,7 +263,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index_old.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\PageError.cshtml" />
@@ -348,6 +361,13 @@
   <ItemGroup>
     <Content Include="Views\Home\Blog.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Event.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
