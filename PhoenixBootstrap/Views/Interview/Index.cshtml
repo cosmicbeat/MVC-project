@@ -9,27 +9,26 @@
     ViewBag.Title = "Interviews";
 }
 
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<h2> Phoenix Inspire</h2>
 
-@*<p>
-    @Html.ActionLink("Create New", "Create");
-</p>*@
+<div id="wrap">
+    <br /><br /><br /><br /><br /><br />
+    <h2> Phoenix Inspire Past Events</h2>
 
+    @*<p>
+            @Html.ActionLink("Create New", "Create");
+        </p>*@
 
-<div id="interviewsContainer">
-    @foreach (var item in Model)
-    {
-        @Html.Partial("~/Views/Shared/_Interview.cshtml", item)
-    }
+    <div id="bg_top">
+        <div id="middle_wrap">
+            @foreach (var item in Model)
+            {
+                @Html.Partial("~/Views/Shared/_Interview.cshtml", item)
+            }
+        </div>
+    </div>
 </div>
+
+
 
 
  

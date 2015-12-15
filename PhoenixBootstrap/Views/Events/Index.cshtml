@@ -6,28 +6,44 @@
     ViewBag.Title = "Home";
 }
 
-<h2> Phoenix Inspire</h2>
+<div id="wrap">
+    <br /><br /><br />
+    <h2> Phoenix Inspire Events</h2>
 
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<h2> Phoenix Inspire</h2>
+<div class="container">
+    <div class="col-lg-12">
+        <h2 class="page-header">To train 50 adults in the poorest area of Bulgaria</h2>
+    </div>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>
+                    <script type="text/javascript" src="http://www.globalgiving.org/javascript/widget/widget.js">  { "projectids" : "22304", "ggtid" : "62B4BA11FC61E42FF2D54D260304F08F"  }  </script>
+                </td>
 
-@*<p>
-        @Html.ActionLink("Create New", "Create");
-    </p>*@
-
-
-<div id="eventsContainer">
-    @foreach (var item in Model)
-    {
-        @Html.Partial("~/Views/Shared/_Event.cshtml", item)
-    }
+                <td>
+                    Phoenix Inspire will teach and develop valuable pastry, bakery and service skills to disadvantaged young adults through a social enterprise in north west Bulgaria. The young adults will learn and understand how to make a wide range of quality food products and how to serve customers correctly so that when they leave the training program they will have the necessary skills to progress into employment. <br/><br />
+                    Phoenix Inspire offers to train unemployed young adults to become basic pastry chefs, bakers and food service personnel. The one year training program will include skill development and underpinning knowledge. In our social enterprise, trainees practice and hone their skills under the guidance of professionals. The trainees will work a full week and be paid appropriately, thus preparing them for future employment. This program aims to break the cycle of poverty & despair.<br /><br />
+                    This long term sustainable project will train as many as 50 young adults. After completing the Phoenix Inspire training program, it is virtually guaranteed that each adult will have a better life. Their family and their children will see their future differently. This is a long term project to solve a historically debilitating issue. Applied 'live' learning, offered here, is a new concept particularly for Bulgaria. This project will stimulate a different method of teaching and training.
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+        @*<p>
+                @Html.ActionLink("Create New", "Create");
+            </p>*@
+
+        <div id="bg_top">
+            <div id="middle_wrap">
+                @foreach (var item in Model)
+                {
+                    @Html.Partial("~/Views/Shared/_Event.cshtml", item)
+                }
+            </div>
+        </div>
+    </div>
+
+
 
 

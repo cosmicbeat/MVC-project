@@ -1,31 +1,14 @@
 ﻿@model Phoenix.Models.Interview
 
-<div>
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+<link href="@Url.Content("~/css/templateInterview/style.css")" rel="stylesheet">
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DatePublic)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DatePublic)
-        </dd>
-
-    </dl>
+<div id="content">
+    <h2>@Html.DisplayFor(model => model.Title)</h2>
+    <div class="post_details">
+        <p>Posted on @Html.DisplayFor(model => model.DatePublic) </p>
+    </div>
+    <p>@Html.DisplayFor(model => model.Description)</p>
 </div>
+
+
 

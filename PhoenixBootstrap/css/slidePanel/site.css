@@ -1,6 +1,7 @@
 body{
             font-family:Arial, Helvetica, sans-serif;
             margin:10px;
+            margin-top:100px;
         }
         .wrapper{
             position:relative;
@@ -9,6 +10,7 @@ body{
             padding-left:50px;
             width:80%;
             margin:auto
+            z-index: 99;
         }
         .wrapper .text{
             font-family:Arial, Helvetica, sans-serif;
@@ -47,7 +49,7 @@ body{
         .extruder.left.a .flap{
             font-size:18px;
             color:white;
-            top:0;
+            margin-top:150px;
             padding:10px 0 10px 10px;
             background:#47639E;
             width:30px;
@@ -58,6 +60,7 @@ body{
             -webkit-border-bottom-right-radius:10px;
             -moz-box-shadow:#666 2px 0px 3px;
             -webkit-box-shadow:#666 2px 0px 3px;
+            z-index: 99;
         }
 
         .extruder.left.a .content{
@@ -75,4 +78,5 @@ body{
 
         .extruder.left.a .flap .flapLabel{
             background:#47639E;
+            margin-left: -7px;
         }

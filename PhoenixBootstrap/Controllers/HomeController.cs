@@ -36,6 +36,12 @@
             return View();
         }
 
+        public ActionResult Gallery()
+        {
+            ViewBag.Title = "Gallery";
+            return View();
+        }
+
         public ActionResult Board()
         {
             ViewBag.Title = "Board";
@@ -60,7 +66,7 @@
             return View();
         }
 
-        public ActionResult FocusAreas()
+        public ActionResult AreasOfFocus()
         {
             ViewBag.Title = "Focus Areas";
             return View();

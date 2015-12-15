@@ -37,6 +37,17 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="DefaultConnection-Deployment" Order="1">
+          <Destination Path="Server=%28local%29%3bDatabase=phoenixc_inspiremvc%3buid=phoenixc_mvc%3bpwd=Zxcvb123456!" />
+          <Object Type="DbFullSql">
+            <PreSource Path="Data Source=.\SQLEXPRESS%3bInitial Catalog=PhoenixBootstrap%3bIntegrated Security=True" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Release\AutoScripts\DefaultConnection-Deployment_SchemaAndData.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -206,9 +217,98 @@
     <Content Include="css\slidePanel\mbExtruder.css" />
     <Content Include="css\slidePanel\site.css" />
     <Content Include="css\sticky-footer-navbar.css" />
+    <Content Include="css\templateInterview\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Home\highslide\easing_equations.js" />
+    <Content Include="Home\highslide\editor-config.txt" />
+    <Content Include="Home\highslide\graphics\close.png" />
+    <Content Include="Home\highslide\graphics\closeX.png" />
+    <Content Include="Home\highslide\graphics\controlbar-black-border.gif" />
+    <Content Include="Home\highslide\graphics\controlbar-text-buttons.png" />
+    <Content Include="Home\highslide\graphics\controlbar-white-small.gif" />
+    <Content Include="Home\highslide\graphics\controlbar-white.gif" />
+    <Content Include="Home\highslide\graphics\controlbar2.gif" />
+    <Content Include="Home\highslide\graphics\controlbar3.gif" />
+    <Content Include="Home\highslide\graphics\controlbar4-hover.gif" />
+    <Content Include="Home\highslide\graphics\controlbar4.gif" />
+    <Content Include="Home\highslide\graphics\fullexpand.gif" />
+    <Content Include="Home\highslide\graphics\geckodimmer.png" />
+    <Content Include="Home\highslide\graphics\icon.gif" />
+    <Content Include="Home\highslide\graphics\loader.big.black.gif" />
+    <Content Include="Home\highslide\graphics\loader.big.white.gif" />
+    <Content Include="Home\highslide\graphics\loader.black.gif" />
+    <Content Include="Home\highslide\graphics\loader.white.gif" />
+    <Content Include="Home\highslide\graphics\outlines\beveled.png" />
+    <Content Include="Home\highslide\graphics\outlines\custom.png" />
+    <Content Include="Home\highslide\graphics\outlines\drop-shadow.png" />
+    <Content Include="Home\highslide\graphics\outlines\glossy-dark.png" />
+    <Content Include="Home\highslide\graphics\outlines\outer-glow.png" />
+    <Content Include="Home\highslide\graphics\outlines\rounded-black.png" />
+    <Content Include="Home\highslide\graphics\outlines\rounded-white.png" />
+    <Content Include="Home\highslide\graphics\resize.gif" />
+    <Content Include="Home\highslide\graphics\scrollarrows.png" />
+    <Content Include="Home\highslide\graphics\zoom.png" />
+    <Content Include="Home\highslide\graphics\zoomin.cur" />
+    <Content Include="Home\highslide\graphics\zoomout.cur" />
+    <Content Include="Home\highslide\highslide-full.js" />
+    <Content Include="Home\highslide\highslide-full.packed.js" />
+    <Content Include="Home\highslide\highslide-ie6.css" />
+    <Content Include="Home\highslide\highslide-with-gallery.js" />
+    <Content Include="Home\highslide\highslide-with-gallery.packed.js" />
+    <Content Include="Home\highslide\highslide-with-html.js" />
+    <Content Include="Home\highslide\highslide-with-html.packed.js" />
+    <Content Include="Home\highslide\highslide.config.js" />
+    <Content Include="Home\highslide\highslide.css" />
+    <Content Include="Home\highslide\highslide.js" />
+    <Content Include="Home\highslide\highslide.packed.js" />
+    <Content Include="Home\highslide\images\large\10989173_905834362814734_6700622956886927365_n.jpg" />
+    <Content Include="Home\highslide\images\large\10995336_905833276148176_4501114270718490327_n.jpg" />
+    <Content Include="Home\highslide\images\large\11082386_905833752814795_7224646067152378577_o.jpg" />
+    <Content Include="Home\highslide\images\large\11259192_905833442814826_5812327592176496175_n.jpg" />
+    <Content Include="Home\highslide\images\large\Allthreewiththeirwork.JPG" />
+    <Content Include="Home\highslide\images\large\Andsotheyshouldbeitwasexcellent.JPG" />
+    <Content Include="Home\highslide\images\large\ChildrenwiththeirpresentsinVruvallcalmtoo.JPG" />
+    <Content Include="Home\highslide\images\large\DSC06971.JPG" />
+    <Content Include="Home\highslide\images\large\DSC_0003.JPG" />
+    <Content Include="Home\highslide\images\large\DSC_0005.JPG" />
+    <Content Include="Home\highslide\images\large\DSC_0011.JPG" />
+    <Content Include="Home\highslide\images\large\DSC_0026.JPG" />
+    <Content Include="Home\highslide\images\large\DSC_0048.JPG" />
+    <Content Include="Home\highslide\images\large\DSC_0076.JPG" />
+    <Content Include="Home\highslide\images\large\FriendsCyrusandPervinTodiwalaofCafeSpice.JPG" />
+    <Content Include="Home\highslide\images\large\friendssortingouttoysandclothes.JPG" />
+    <Content Include="Home\highslide\images\large\FundraisingdinneratGrimsbyCollegeFeburary2009.JPG" />
+    <Content Include="Home\highslide\images\large\presents2andkidswithnewbootson.JPG" />
+    <Content Include="Home\highslide\images\large\PresentscollectedattheChildrensHomeinNovoSelo.JPG" />
+    <Content Include="Home\highslide\images\thumbs\10989173_905834362814734_6700622956886927365_n.jpg" />
+    <Content Include="Home\highslide\images\thumbs\10995336_905833276148176_4501114270718490327_n.jpg" />
+    <Content Include="Home\highslide\images\thumbs\11082386_905833752814795_7224646067152378577_o.jpg" />
+    <Content Include="Home\highslide\images\thumbs\11259192_905833442814826_5812327592176496175_n.jpg" />
+    <Content Include="Home\highslide\images\thumbs\Allthreewiththeirwork.JPG" />
+    <Content Include="Home\highslide\images\thumbs\Andsotheyshouldbeitwasexcellent.JPG" />
+    <Content Include="Home\highslide\images\thumbs\ChildrenwiththeirpresentsinVruvallcalmtoo.JPG" />
+    <Content Include="Home\highslide\images\thumbs\DSC06971.JPG" />
+    <Content Include="Home\highslide\images\thumbs\DSC_0003.JPG" />
+    <Content Include="Home\highslide\images\thumbs\DSC_0005.JPG" />
+    <Content Include="Home\highslide\images\thumbs\DSC_0011.JPG" />
+    <Content Include="Home\highslide\images\thumbs\DSC_0026.JPG" />
+    <Content Include="Home\highslide\images\thumbs\DSC_0048.JPG" />
+    <Content Include="Home\highslide\images\thumbs\DSC_0076.JPG" />
+    <Content Include="Home\highslide\images\thumbs\FriendsCyrusandPervinTodiwalaofCafeSpice.JPG" />
+    <Content Include="Home\highslide\images\thumbs\friendssortingouttoysandclothes.JPG" />
+    <Content Include="Home\highslide\images\thumbs\FundraisingdinneratGrimsbyCollegeFeburary2009.JPG" />
+    <Content Include="Home\highslide\images\thumbs\presents2andkidswithnewbootson.JPG" />
+    <Content Include="Home\highslide\images\thumbs\PresentscollectedattheChildrensHomeinNovoSelo.JPG" />
+    <Content Include="Home\highslide\sample-images\full-image.jpg" />
+    <Content Include="Home\highslide\sample-images\thumbnail.jpg" />
+    <Content Include="Home\highslide\sample-includes\ajax.htm" />
+    <Content Include="Home\highslide\sample-includes\Flash.swf" />
+    <Content Include="Home\highslide\sample-includes\include-short.htm" />
+    <Content Include="Home\Home\highslide\highslide-with-gallery.js" />
+    <Content Include="Home\Home\highslide\highslide.config.js" />
+    <Content Include="Home\Home\highslide\highslide.css" />
     <Content Include="humans.txt" />
     <Content Include="Images\cake.jpg" />
     <Content Include="Images\bug.png" />
@@ -220,6 +320,15 @@
     <Content Include="Images\slider\DSC_0006.JPG" />
     <Content Include="Images\slider\people.jpg" />
     <Content Include="Images\slider\Social workers present cert to Phoenix Inspire.JPG" />
+    <Content Include="Images\templateInterview\author_paper_bottom.jpg" />
+    <Content Include="Images\templateInterview\author_paper_top.jpg" />
+    <Content Include="Images\templateInterview\bg_content.jpg" />
+    <Content Include="Images\templateInterview\bg_content_top.jpg" />
+    <Content Include="Images\templateInterview\bg_footer.jpg" />
+    <Content Include="Images\templateInterview\bg_post_details.gif" />
+    <Content Include="Images\templateInterview\footer_rollover.jpg" />
+    <Content Include="Images\templateInterview\post_details_comment.gif" />
+    <Content Include="Images\templateInterview\post_details_p_bg.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\History\ajaxchimp.js" />
@@ -237,6 +346,7 @@
     <Content Include="js\slidePanel\jquery.mb.flipText.js" />
     <Content Include="js\slidePanel\mbExtruder.js" />
     <Content Include="js\slidePanel\selector.js" />
+    <Content Include="Views\Shared\facebookSlide.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -367,7 +477,15 @@
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\Home\Gallery.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Partnerships.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\AreasOfFocus.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

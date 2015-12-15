@@ -225,7 +225,7 @@ header .social li:first-child{
 }
 
 .hero .caption h1{
-	color: #525252;
+	color: rgb(58, 58, 245);
 	font-family: "open_bold", Helvetica, Arial, sans-serif;
 	font-size: 34px;
 	font-weight: bold;
@@ -233,9 +233,9 @@ header .social li:first-child{
 }
 
 .hero .caption p{
-	color: #6d6c6c;
+	color: rgb(58, 58, 245);
 	font-family: "open_regular", Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 24px;
 	line-height: 30px;
 	margin: 15px 0 35px 0;
 }
@@ -398,7 +398,7 @@ a.app_link{
 /*		About section 		*/
 
 .about{
-	padding: 100px 0;
+	padding: 1px 0;
 }
 
 .about .iphone{
@@ -536,7 +536,7 @@ a.app_link{
 /*		Testimonials section 		*/
 
 .testimonials{
-	padding: 100px 0;
+	padding: 1px 0;
 }
 
 .testimonials .testimonials_list{
